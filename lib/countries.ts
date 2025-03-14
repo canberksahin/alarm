@@ -1,0 +1,23 @@
+export const countries = [
+  { code: "FR", name: "Fransa", language: "Fransızca" },
+  { code: "DE", name: "Almanya", language: "Almanca" },
+  { code: "ES", name: "İspanya", language: "İspanyolca" },
+  { code: "IT", name: "İtalya", language: "İtalyanca" },
+  { code: "GB", name: "Birleşik Krallık", language: "İngilizce" },
+  { code: "US", name: "Amerika Birleşik Devletleri", language: "İngilizce" },
+  { code: "TR", name: "Türkiye", language: "Türkçe" },
+  { code: "RU", name: "Rusya", language: "Rusça" },
+  { code: "CN", name: "Çin", language: "Çince" },
+  { code: "JP", name: "Japonya", language: "Japonca" },
+  { code: "BR", name: "Brezilya", language: "Portekizce" },
+  { code: "IN", name: "Hindistan", language: "Hintçe" },
+  { code: "CA", name: "Kanada", language: "İngilizce/Fransızca" },
+  { code: "AU", name: "Avustralya", language: "İngilizce" },
+  { code: "ZA", name: "Güney Afrika", language: "İngilizce" },
+  { code: "MX", name: "Meksika", language: "İspanyolca" },
+  { code: "AR", name: "Arjantin", language: "İspanyolca" },
+  { code: "EG", name: "Mısır", language: "Arapça" },
+  { code: "SA", name: "Suudi Arabistan", language: "Arapça" },
+  { code: "KR", name: "Güney Kore", language: "Korece" },
+]
+

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+<rect width="900" height="200" fill="#ff9933"/>
+<rect width="900" height="200" y="200" fill="#fff"/>
+<rect width="900" height="200" y="400" fill="#138808"/>
+<circle cx="450" cy="300" r="60" fill="#000080"/>
+<circle cx="450" cy="300" r="55" fill="#fff"/>
+<circle cx="450" cy="300" r="16.5" fill="#000080"/>
+<circle cx="450" cy="300" r="3" fill="#000080"/>
+<g id="spokes">
+  <line x1="450" y1="300" x2="450" y2="245" stroke="#000080" stroke-width="3"/>
+  <line x1="450" y1="300" x2="495" y2="300" stroke="#000080" stroke-width="3"/>
+  <line x1="450" y1="300" x2="450" y2="355" stroke="#000080" stroke-width="3"/>
+  <line x1="450" y1="300" x2="405" y2="300" stroke="#000080" stroke-width="3"/>
+</g>
+<use href="#spokes" transform="rotate(22.5, 450, 300)"/>
+<use href="#spokes" transform="rotate(45, 450, 300)"/>
+<use href="#spokes" transform="rotate(67.5, 450, 300)"/>
+</svg>
+
