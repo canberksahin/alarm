@@ -1,0 +1,1 @@
+Header set Content-Security-Policy "default-src 'self'; frame-src www.openstreetmap.org; style-src 'self'; script-src 'self' www.openstreetmap.org;"

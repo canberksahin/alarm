@@ -37,9 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr" className={`${inter.variable} ${spaceMono.variable} ${robotoMono.variable}`}>
+    <html lang="tr" className={`${inter.variable} ${spaceMono.variable} ${robotoMono.variable}`} suppressHydrationWarning>
       <head>
-      <script src="http://localhost:8097"></script>
         <link
           rel="icon"
           href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/I%CC%87letis%CC%A7im_Bas%CC%A7kanl%C4%B1g%CC%86%C4%B1_logo.svg-5rucsMbOD8GaKOL5W63IQsv7vLTo5V.png"

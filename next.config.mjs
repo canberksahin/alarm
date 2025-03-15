@@ -53,7 +53,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.amcharts.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://hebbkx1anhila5yf.public.blob.vercel-storage.com; font-src 'self'; connect-src 'self' https://cdn.amcharts.com;",
+            value: "default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *",
           },
         ],
       },

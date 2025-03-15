@@ -38,6 +38,7 @@ const Tooltip = dynamic(
 )
 
 export default function WorldMapPage() {
+  const url = '/marker-red.png'
   const router = useRouter()
   const [activeAlerts, setActiveAlerts] = useState<Array<{ id: number; country: string; score: number }>>([])
   const matrixRef = useRef<HTMLDivElement>(null)
@@ -173,7 +174,6 @@ export default function WorldMapPage() {
     return criticalItems.map((item) => {
       const coords = countryCoordinates[item.country] || [0, 0]
       const countryName = getCountryName(item.country)
-debugger;
       return {
         id: item.id,
         name: countryName,
@@ -272,13 +272,13 @@ debugger;
                     {/* Karanlık tem harita - Matrix temasına daha uygun */}
                     <TileLayer
                       attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-                      url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+                      url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=190dee42-0899-4d47-8111-c4dc63ca4d75"
                     />
                     
                     {/* Alternatif olarak normal OpenStreetMap */}
                     {/* <TileLayer
                       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=190dee42-0899-4d47-8111-c4dc63ca4d75"
                     /> */}
                     
                     {/* Krizleri gösteren markerlar */}
@@ -287,7 +287,7 @@ debugger;
                       <Marker
                         key={marker.id}
                         position={marker.position}
-                        icon={createCustomIcon ? createCustomIcon(marker.score) : undefined}
+                       // icon={createCustomIcon ? createCustomIcon(marker.score)}
                         eventHandlers={{
                           click: () => {
                             try {
